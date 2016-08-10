@@ -71,6 +71,11 @@ sum(orders.quantity * items.price)
 10045128      -->
 - [ ] Simulate buying an item by inserting a User for yourself and an Order for that User.
 <!-- sqlite> insert into users values(NULL, "Adam", "Fronczak", "Fronczak.Adam@gmail.com"); -->
+<!-- insert into orders(user_id, item_id, quantity) values(51, 76, 2); -->
+<!-- sqlite> select * from orders where user_id = 51;
+id          user_id     item_id     quantity    created_at
+----------  ----------  ----------  ----------  ----------
+378         51          76          2                      -->
 
 ## Adventure Mode
 
